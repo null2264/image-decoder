@@ -1,2 +1,6 @@
+jdk:
+  - openjdk17
 before_install:
+  - sdk install java 17.0.9-open
+  - sdk use java 17.0.9-open
   - yes | $ANDROID_HOME/tools/bin/sdkmanager "cmake;3.22.1" "ndk;26.2.11394342"
