@@ -28,6 +28,15 @@ jobs:
           java-version: 17
           distribution: adopt
 
+      - name: Setup dependencies
+        run: |
+          sudo apt install \
+            python3 \
+            python3-pip \
+            python3-setuptools \
+            python3-wheel \
+            ninja-build
+
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v3
 
