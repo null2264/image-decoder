@@ -30,7 +30,7 @@ jobs:
 
       - name: Setup dependencies
         run: |
-          sudo apt install -U \
+          sudo apt install \
             build-essential \
             meson \
             ninja-build
