@@ -30,6 +30,7 @@ jobs:
 
       - name: Setup dependencies
         run: |
+          sudo apt update
           sudo apt install \
             build-essential \
             meson \
